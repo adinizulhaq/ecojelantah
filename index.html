@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Eco Jelantah — Edukasi Daur Ulang Minyak</title>
+    <link rel="icon" type="image/x-icon" href="assets/Logo.png" />
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Link Animation On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Google Font Inter -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -68,7 +71,6 @@
             class="cta"
             style="flex: 1; text-align: center; color: white"
             href="#ecojelantah"
-            onclick="closeMenu()"
             >Pelajari</a
           >
         </div>
@@ -218,23 +220,19 @@
 
       <!-- Anggota Start -->
       <section id="tentang" class="container" style="padding-top: 10px">
-        <!-- <div class="section-title">
-          <h2 style="margin: 0; color: var(--primary-700)">Anggota</h2>
-          <div class="muted">Pengelola Eco Jelantah</div>
-        </div> -->
         <div class="members">
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/men/11.jpg" />
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" />
             <h3>Adin Izulhaq</h3>
             <p>202343501673</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/women/22.jpg" />
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" />
             <h3>Adji Putra</h3>
             <p>202343501683</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/men/33.jpg" />
+            <img src="https://randomuser.me/api/portraits/women/33.jpg" />
             <h3>Atin Martini</h3>
             <p>202343501689</p>
           </div>
@@ -249,12 +247,12 @@
             <p>202343501694</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/women/66.jpg" />
+            <img src="https://randomuser.me/api/portraits/men/66.jpg" />
             <h3>Muhammad Rafly</h3>
             <p>202343501684</p>
           </div>
           <div class="member-card">
-            <img src="https://randomuser.me/api/portraits/women/66.jpg" />
+            <img src="https://randomuser.me/api/portraits/men/6.jpg" />
             <h3>Reza Ramadhan</h3>
             <p>202343501648</p>
           </div>
@@ -372,7 +370,6 @@
             <p
               class="muted mt-8"
               id="contactFeedback"
-              aria-live="polite"
               style="display: none"
             ></p>
           </div>
@@ -446,6 +443,12 @@
       <!-- Footer End -->
     </main>
 
+    <!-- Link AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Script JS -->
     <script src="js/main.js"></script>
   </body>
 </html>

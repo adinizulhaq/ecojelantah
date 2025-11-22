@@ -1,12 +1,10 @@
 :root {
   --bg: #f6fbf6;
   --card: #ffffff;
-  --primary-700: #2f7a3e; /* main green */
+  --primary-700: #2f7a3e;
   --primary-500: #44a253;
   --primary-300: #9bd7a1;
-  --accent: #f2c94c;
   --muted: #6b6b6b;
-  --glass: rgba(255, 255, 255, 0.6);
   --radius: 12px;
   --max-width: 1100px;
   --shadow: 0 6px 26px rgba(34, 41, 47, 0.08);
@@ -266,6 +264,14 @@ nav.main-nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+.member-card h3 {
+  color: var(--primary-700);
+}
+
+.member-card p {
+  color: var(--muted);
 }
 
 .section-title {

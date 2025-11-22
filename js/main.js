@@ -1,17 +1,18 @@
+// Mengambil elemen tombol dan menu
 const btn = document.getElementById("btnHamburger");
 const menu = document.getElementById("mobileMenu");
 
+// Menampilkan menu saat diklik
 btn.addEventListener("click", () => {
-  const shown = menu.classList.toggle("show");
-  menu.setAttribute("aria-hidden", !shown);
+  menu.classList.add("show");
 });
 
-function closeMenu() {
+// Menghilangkan menu saat diklik
+menu.addEventListener("click", () => {
   menu.classList.remove("show");
-  menu.setAttribute("aria-hidden", "true");
-}
+});
 
-// Handler untuk kontak
+// Menangani submit form kontak
 function handleContact(e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
@@ -20,11 +21,11 @@ function handleContact(e) {
   fb.textContent =
     "Terima kasih " + (name || "") + "! Pesan Anda telah diterima";
   fb.style.color = "var(--primary-700)";
-  // reset form after short delay to show feedback (demo)
+  // Mengosongkan form setelah submit
   setTimeout(() => {
     e.target.reset();
   }, 600);
 }
 
-// Set tahun di footer
+// Mengatur tahun di footer secara dinamis
 document.getElementById("year").textContent = new Date().getFullYear();
