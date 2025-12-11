@@ -51,6 +51,10 @@ a {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 24px;
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
 }
 
 .row {
