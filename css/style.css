@@ -260,6 +260,10 @@ nav.main-nav a:hover {
   padding: 20px;
   border-radius: 12px;
   box-shadow: var(--shadow);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .member-card img {
